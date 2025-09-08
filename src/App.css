@@ -1,0 +1,124 @@
+.App {
+  text-align: center;
+  
+}
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.alert{
+ height: 400px;
+ width: 400px;
+}
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hover-card {
+  border: 2px solid transparent;
+  border-radius: 12px;
+  transition: border-color 0.4s ease, transform 0.3s ease;
+}
+
+.hover-card:hover {
+   
+  transform: scale(1.03);
+  box-shadow: 0 0 12px rgba(7, 139, 255, 0.808); 
+  
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+/* Luxurious Navbar Styling */
+.navbar {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.navbar-brand h3 {
+  transition: color 0.3s ease;
+}
+
+.navbar-brand h3:hover {
+  color: tomato;
+}
+
+/* Nav Links */
+.navbar-nav .nav-link {
+  position: relative;
+  color: #444 !important;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: tomato !important;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: tomato;
+  transition: width 0.3s;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Login Button Styling */
+.navbar .login-btn {
+  background-color: white;
+  color: #49557e;
+  border: 1px solid tomato;
+  border-radius: 50px;
+  padding: 8px 20px;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.navbar .login-btn:hover {
+  background-color: tomato;
+  color: white;
+  transform: scale(1.05);
+}
